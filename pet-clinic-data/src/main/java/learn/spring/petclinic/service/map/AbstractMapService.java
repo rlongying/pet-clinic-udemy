@@ -1,7 +1,5 @@
 package learn.spring.petclinic.service.map;
 
-import learn.spring.petclinic.model.BaseEntity;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
