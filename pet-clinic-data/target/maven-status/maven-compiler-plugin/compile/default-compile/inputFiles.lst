@@ -1,5 +1,14 @@
 /Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/Person.java
 /Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/PetType.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/map/OwnerMapService.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/map/PetMapService.java
 /Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/Vet.java
-/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/Pet.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/VetService.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/map/AbstractMapService.java
 /Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/Owner.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/OwnerService.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/map/VetMapService.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/Pet.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/CrudService.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/service/PetService.java
+/Users/ivan/Desktop/courses/spring/pet-clinic-udemy/pet-clinic-data/src/main/java/learn/spring/petclinic/model/BaseEntity.java
