@@ -1,9 +1,6 @@
 package learn.spring.petclinic.bootstrap;
 
-import learn.spring.petclinic.model.Owner;
-import learn.spring.petclinic.model.Person;
-import learn.spring.petclinic.model.PetType;
-import learn.spring.petclinic.model.Vet;
+import learn.spring.petclinic.model.*;
 import learn.spring.petclinic.service.OwnerService;
 import learn.spring.petclinic.service.PetTypeService;
 import learn.spring.petclinic.service.VetService;
@@ -12,6 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -39,11 +37,32 @@ public class DataLoader implements CommandLineRunner {
 
 
         Owner owner1 = createPerson(Owner.class,"Michael", "Weston");
+        owner1.setAddress("123 Brickerel");
+        owner1.setCity("Weston");
+        owner1.setTelephone("1233452");
         ownerService.save(owner1);
 
         Owner owner2 = createPerson(Owner.class,"Fiona", "Glenanne");
+        owner2.setAddress("234 Union");
+        owner2.setCity("Eastern");
+        owner2.setTelephone("1231414");
         ownerService.save(owner2);
         System.out.println("Loaded owners...");
+
+        Pet mikespet = new Pet();
+        mikespet.setPetType(savedDogPetType);
+        mikespet.setOwner(owner1);
+        mikespet.setBirthDate(LocalDate.now());
+        mikespet.setName("Rosco");
+        owner1.getPets().add(mikespet);
+
+        Pet fionasCat = new Pet();
+        fionasCat.setPetType(saveCatPetType);
+        fionasCat.setOwner(owner2);
+        fionasCat.setBirthDate(LocalDate.now());
+        fionasCat.setName("Rosco");
+        owner2.getPets().add(fionasCat);
+
 
         Vet vet1 = createPerson(Vet.class,"Sam", "Axe");
         Vet vet2 = createPerson(Vet.class,"Jessie", "Porter");
