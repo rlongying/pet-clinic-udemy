@@ -69,6 +69,8 @@ local.properties
 ######################
 /log/
 /target/
+# exclude target directory inside submodulars
+target/
 
 ######################
 # Gradle
